@@ -85,10 +85,10 @@ vector:
 
 1. **Клонируйте репозиторий:**
    
-```
-git clone https://github.com/VN351/ans-hw-2-code.git
-cd ans-hw-2-code
-```
+    ```
+    git clone https://github.com/VN351/ans-hw-2-code.git
+    cd ans-hw-2-code
+    ```
 2. **Настройте инвентарь:**
    Отредактируйте файл templates/prod.yml, добавив ваши хосты ClickHouse и Vector.
 
