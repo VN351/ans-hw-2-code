@@ -50,7 +50,7 @@
 Определите ваши управляемые хосты в инвентарном файле prod.yml, расположенном в папке templates, группируя их по категориям clickhouse и vector.
 
 **Пример templates/prod.yml:**
-```
+```yml
 clickhouse:
   hosts:
     clickhouse-01:
@@ -85,7 +85,7 @@ vector:
 
 1. **Клонируйте репозиторий:**
    
-    ```
+    ```bash
     git clone https://github.com/VN351/ans-hw-2-code.git
     cd ans-hw-2-code
     ```
