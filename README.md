@@ -107,7 +107,7 @@ ans-hw-2-code/
 |   |   └── vars.yml          
 │   └── vector
 |       └── vars.yml
-├── templates/
+├── inventory/
 │   └── prod.yml
 ├── templates/
 │   ├── vector.yml.j2
