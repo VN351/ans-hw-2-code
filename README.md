@@ -76,7 +76,7 @@ vector:
 
 | Переменная            | Описание                                            | Пример                                                             |
 |-----------------------|-----------------------------------------------------|--------------------------------------------------------------------|
-| vector_url          | URL для скачивания RPM-пакета Vector.               | https://packages.timber.io/vector/vector-0.26.1-1.x86_64.rpm     |
+| vector_url          | URL для скачивания RPM-пакета Vector.               | https://packages.timber.io/vector/0.22.3/vector-0.22.3-1.x86_64.rpm   |
 | vector_version      | Версия Vector для установки.                        | 0.22.3                                                           |
 | vector_config_dir   | Директория, где находятся конфигурационные файлы Vector.| /etc/vector                                                   |
 
@@ -121,7 +121,7 @@ ans-hw-2-code/
 - **group_vars/:** Директория для переменных, специфичных для групп.
 - **templates/:** Содержит Jinja2 шаблоны для конфигурационных файлов.
 
-**Запуск полного Playbook:**
+**Запуск Playbook:**
     ```
     ansible-playbook -i templates/prod.yml site.yml
     ```
