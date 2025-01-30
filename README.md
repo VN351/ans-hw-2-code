@@ -8,8 +8,6 @@
 - [Переменные](#переменные)
 - [Использование](#использование)
 - [Структура директорий](#структура-директорий)
-- [Пример](#пример)
-
 
 ## Обзор
 
@@ -95,27 +93,22 @@ vector:
     ```  
 
 ## Структура директорий
-```
-ans-hw-2-code/
-├── group_vars/
-│   ├── clickhouse/
-|   |   └── vars.yml          
-│   └── vector
-|       └── vars.yml
-├── inventory/
-│   └── prod.yml
-├── templates/
-│   ├── vector.yml.j2
-│   └── vector.service.j2
-├── site.yml
-└── README.md
-```
+  ```
+  ans-hw-2-code/
+  ├── group_vars/
+  │   ├── clickhouse/
+  |   |   └── vars.yml          
+  │   └── vector
+  |       └── vars.yml
+  ├── inventory/
+  │   └── prod.yml
+  ├── templates/
+  │   ├── vector.yml.j2
+  │   └── vector.service.j2
+  ├── site.yml
+  └── README.md
+  ```
 - **site.yml:** Основной playbook, содержащий все задачи установки.
 - **templates/prod.yml:** Определяет управляемые хосты, сгруппированные по сервисам.
 - **group_vars/:** Директория для переменных, специфичных для групп.
 - **templates/:** Содержит Jinja2 шаблоны для конфигурационных файлов.
-
-**Запуск Playbook:**
-    ```
-    ansible-playbook -i templates/prod.yml site.yml
-    ```
