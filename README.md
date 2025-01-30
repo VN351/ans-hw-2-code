@@ -100,7 +100,7 @@
          ansible_connection: docker
    ```
 3. **Запустите Playbook:**
-    ```
+    ```bash
     ansible-playbook -i templates/prod.yml site.yml
     ```  
 
