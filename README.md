@@ -4,7 +4,6 @@
 - [Обзор](#обзор)
 - [Особенности](#особенности)
 - [Требования](#требования)
-- [Инвентарь](#инвентарь)
 - [Переменные](#переменные)
 - [Использование](#использование)
 - [Структура директорий](#структура-директорий)
@@ -38,21 +37,6 @@
   - Возможность скачивания пакетов с внешних URL.
   - SSH-доступ к управляемым хостам.
 
-## Инвентарь
-
-Определите ваши управляемые хосты в инвентарном файле prod.yml, расположенном в папке templates, группируя их по категориям clickhouse и vector.
-
-**Пример templates/prod.yml:**
-```yml
-clickhouse:
-  hosts:
-    clickhouse-01:
-      ansible_connection: docker
-vector:
-  hosts:
-    vector-01:
-      ansible_connection: docker
-```
 
 ## Переменные
 
@@ -83,6 +67,17 @@ vector:
     ```
 2. **Настройте инвентарь:**
    Отредактируйте файл templates/prod.yml, добавив ваши хосты ClickHouse и Vector.
+   **Пример templates/prod.yml:**
+   ```yml
+   clickhouse:
+     hosts:
+       clickhouse-01:
+         ansible_connection: docker
+   vector:
+     hosts:
+       vector-01:
+         ansible_connection: docker
+  ```
 3. **Запустите Playbook:**
     ```
     ansible-playbook -i templates/prod.yml site.yml
