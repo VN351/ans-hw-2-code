@@ -77,17 +77,13 @@ vector:
 ## Использование
 
 1. **Клонируйте репозиторий:**
-   
     ```bash
     git clone https://github.com/VN351/ans-hw-2-code.git
     cd ans-hw-2-code
     ```
 2. **Настройте инвентарь:**
    Отредактируйте файл templates/prod.yml, добавив ваши хосты ClickHouse и Vector.
-
-
 3. **Запустите Playbook:**
-   - Для установки как ClickHouse, так и Vector:
     ```
     ansible-playbook -i templates/prod.yml site.yml
     ```  
